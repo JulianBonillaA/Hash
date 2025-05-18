@@ -1,0 +1,17 @@
+def ejercicio_agenda():
+    agenda = {}
+    n = int(input("¿Cuántos contactos desea agregar? "))
+
+    for _ in range(n):
+        nombre = input("Nombre del contacto: ")
+        telefono = input("Teléfono: ")
+        agenda[nombre] = telefono
+
+    buscar = input("Ingrese el nombre que desea buscar: ")
+
+    if buscar in agenda:
+        print(f"Teléfono de {buscar}: {agenda[buscar]}")
+    else:
+        print("Contacto no encontrado.")
+
+ejercicio_agenda()
