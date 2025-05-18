@@ -1,0 +1,17 @@
+def ejercicio_inventario():
+    inventario = {}
+    n = int(input("¿Cuántos productos desea agregar? "))
+
+    for _ in range(n):
+        producto = input("Nombre del producto: ")
+        cantidad = int(input("Cantidad en inventario: "))
+        inventario[producto] = cantidad
+
+    buscar = input("Ingrese el producto que desea buscar: ")
+
+    if buscar in inventario:
+        print(f"Cantidad disponible de {buscar}: {inventario[buscar]}")
+    else:
+        print("Producto no encontrado.")
+
+ejercicio_inventario()
